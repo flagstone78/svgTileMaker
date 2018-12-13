@@ -72,8 +72,3 @@ function drawStuff(desc){
 	
 	desc.parentElement.appendChild(svg)
 }
-
-function download(file){
-	window.location = file
-}
-	
