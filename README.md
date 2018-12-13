@@ -3,7 +3,7 @@ Creates a set of tiles in svg. Originally made to generate a file for a laser cu
 
 To print with the VLS6.60 laser cutter driver and Inkscape:
   1. press ctrl+a to select all elements
-  2. selecd path -> object to path
+  2. select path -> object to path
   3. select Extensions -> Export -> Win32 Vector print
   4. select a material and material thickness and press ok
 
