@@ -42,14 +42,20 @@ function drawStuff(desc){
 			svg.appendChild(rect);
 			
 			var number = document.createElementNS("http://www.w3.org/2000/svg",'text')
-			if(i*numXTiles+j < numberlist.length){
+			var onlist = i*numYTiles+j
+			if(onlist < numberlist.length){
 				number.innerHTML = numberlist[i*numYTiles+j]
-			}
+			}else{number.innerHTML=""};
+
 			number.setAttribute('x',(0.5*desc.scale)+ boxx)
 			number.setAttribute('y',0.5*desc.scale+0.355*textSize+boxy)
 			number.setAttribute('text-anchor','middle')
 			number.setAttribute('stroke','none')
 			number.setAttribute('fill','black')
+			if (number.innerHTML[number.innerHTML.length-1]=='.') {
+				number.innerHTML=number.innerHTML.slice(0,-1)
+				number.setAttribute('text-decoration' , 'underline')	
+			}
 			svg.appendChild(number);
 			
 		}
