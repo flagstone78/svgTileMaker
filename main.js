@@ -2,6 +2,7 @@ var tileDesc = {
 	// The key is what will appear on the tile.
 	//	 Characters are allowed by lowercase wil not appear to be vertically centered
 	// The value is how many times it will appear in the set
+	// strings that have a "." at the end will have the "." removed and the number will be underlined.
 	numberDesc: {
 		0: 7,
 		1: 6,
@@ -9,10 +10,10 @@ var tileDesc = {
 		3: 7,
 		4: 10,
 		5: 6,
-		6: 10,
+		'6.': 10,
 		7: 14,
 		8: 12,
-		9: 12
+		'9.': 12
 	},	
 	scale: 100, //Width and height of tiles
 	strokeWidth: .001, //Thickness of tile border
